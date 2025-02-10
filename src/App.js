@@ -7,15 +7,14 @@ import Experience from "./components/Experience";
 import AboutMe from "./components/AboutMe";
 import MySkills from "./components/Skills";
 import Section from "./Framer";
+import Footer from "./components/Footer";
 
 import "typeface-open-sans";
 
 function App() {
-  // Sayfa kaydırıldıkça aktif olacak bölümler
   const [activeSection, setActiveSection] = useState(null);
-  const [showBackground, setShowBackground] = useState(true); // Arka planı gösterme durumu
+  const [showBackground, setShowBackground] = useState(true);
 
-  // Scroll event handler
   const handleScroll = () => {
     const sections = ["about", "skills", "portfolio", "experience"];
     const scrollPosition = window.scrollY;
@@ -33,15 +32,13 @@ function App() {
       }
     });
 
-    // Scroll pozisyonuna göre arka planın görünürlüğünü kontrol et
     if (scrollPosition > 215) {
-      setShowBackground(false); // Scroll 515px'i geçtiğinde background kaybolacak
+      setShowBackground(false);
     } else {
-      setShowBackground(true); // Scroll en üste geldiğinde tekrar background görünecek
+      setShowBackground(true);
     }
   };
 
-  // Scroll event listener
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -49,7 +46,6 @@ function App() {
 
   return (
     <div className="App content">
-      {/* Arka plan resmi */}
       {showBackground && <div className="header-background"></div>}
 
       <Header activeSection={activeSection} />
@@ -73,6 +69,7 @@ function App() {
         <h2> Work Experience</h2>
         <Experience />
       </div>
+      <Footer />
     </div>
   );
 }

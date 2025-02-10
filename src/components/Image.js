@@ -6,7 +6,6 @@ function AboutContent() {
   return <AppContents />;
 }
 
-// AppContent bileşenini oluşturalım
 function AppContents() {
   const welcome = "Hello, my name is ";
   const title = "Aynur Kozan";

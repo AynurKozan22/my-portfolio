@@ -1,0 +1,52 @@
+.footer {
+  background-color: #1e1e1e;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.copyright {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 10px 0;
+}
+
+.icon {
+  font-size: 24px;
+  color: #ccc;
+  transition: color 0.3s ease-in-out;
+}
+
+.icon:hover {
+  color: #ff6347;
+}
+
+.twitter:hover {
+  color: #1da1f2;
+}
+
+.linkedin:hover {
+  color: #0077b5;
+}
+
+.github:hover {
+  color: #ffffff;
+}
+
+.developer {
+  font-size: 14px;
+  color: #aaa;
+  margin-top: 10px;
+}
