@@ -54,9 +54,7 @@ my-portfolio/
 ## 📬 Contact
 If you have any questions or would like to collaborate, feel free to reach out!
 
-- **Email**: [your-email@example.com](mailto:your-email@example.com)
-- **LinkedIn**: [your-linkedin-url](https://linkedin.com/in/your-profile)
-- **Portfolio**: [your-portfolio-url](https://your-portfolio.com)
+- **Email**: aynurkozan22@gmail.com
 
 ---
 **⭐ If you like this project, consider giving it a star!**
